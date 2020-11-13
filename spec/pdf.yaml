@@ -1,0 +1,45 @@
+from            : markdown+raw_tex
+to              : latex
+standalone      : true
+file-scope      : true
+number-sections : true
+template        : "lib/default.latex"
+pdf-engine      : xelatex
+fail-if-warnings: true
+cite-method     : citeproc
+filters:
+  - pandoc-crossref
+  - pandoc-citeproc
+variables:
+  header-includes:
+    - \fancyhf{}
+    - \lhead{\XeTeXglyph \XeTeXglyphindex "ass_completa_CONT" \relax}
+    - \lfoot{\small{FAU/THAU/PP/2020}}
+    - \rfoot{\small{\thepage}}
+    - \renewcommand{\headrulewidth}{0.5pt}
+    - \renewcommand{\footrulewidth}{0.5pt}
+  include-before:
+    - \thispagestyle{empty}
+metadata:
+  csl: "styles/associacao-brasileira-de-normas-tecnicas.csl"
+  suppress-bibliography: false
+  bibliography-title: "Referências bibliográficas"
+  lang: pt
+  documentclass: article
+  fontsize: 11pt
+  papersize: a4
+  indent: true
+  secnumdepth: 2
+  pagestyle: fancy
+  mainfont: "UnB Pro"
+  sansfont: "UnB Pro-Light"
+  mainfontoptions:
+    - Numbers=Proportional
+    - BoldFont       = UnBPro-Bold
+    - ItalicFont     = UnBPro-RegularItalic
+    - BoldItalicFont = UnBPro-BoldItalic
+  geometry:
+    - top=3cm
+    - right=2cm
+    - bottom=2.5cm
+    - left=3cm
