@@ -1,8 +1,3 @@
-# UnB-LaTeX
+# TAU 0004 Morfologia arquitetônica
 
- Template para Pandoc e LaTeX com as fontes da Universidade de
- Brasília e um Makefile simples.
-
-Este template formata a página e insere cabeçalhos e rodapés padrão, com
-a marca da UnB em versão contorno.
-
+Introdução aos estudos em arquitetura. Configuração, morfologia e tipologia em arquitetura. Metodologia de representação das configurações arquitetônicas. Gramáticas formais. Morfologia arquitetônica em projeto, em ciência da construção e em estudos históricos. Análise morfológica de edifícios complexos.
